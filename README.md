@@ -1,9 +1,10 @@
-# 🔥🔥 Flutter Furniture App Concept [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+# 🛏🛏 Flutter Furniture App Concept [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 Flutter representation of a Furniture App Concept i found on Uplabs.
 
 Star⭐ the repo if you like what you see😉.
 
+[Link to Original Design on Uplabs](https://www.uplabs.com/posts/e-commerce-app-interface-for-furniture)
 
 Images are from [Unsplash](https://unsplash.com)
 
