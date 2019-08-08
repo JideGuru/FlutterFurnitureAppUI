@@ -7,12 +7,6 @@ class IconBadge extends StatefulWidget {
   IconBadge({Key key, @required this.icon})
       : super(key: key);
 
-//  static updateCount(BuildContext context) {
-//    final _IconBadgeState state =
-//    context.ancestorStateOfType(const TypeMatcher<_IconBadgeState>());
-//    state.updateCount();
-//  }
-
   @override
   _IconBadgeState createState() => _IconBadgeState();
 }
