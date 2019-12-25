@@ -9,34 +9,15 @@ void main() async{
   });
 }
 
-
-class MyApp extends StatefulWidget {
-  @override
-  _MyAppState createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  bool isDark = false;
-
-  @override
-  void initState() {
-    super.initState();
-    SystemChrome.setEnabledSystemUIOverlays(SystemUiOverlay.values);
-    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-      statusBarColor: isDark ? Constants.darkPrimary : Constants.lightPrimary,
-      statusBarIconBrightness: isDark?Brightness.light:Brightness.dark,
-    ));
-  }
-
-
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: Constants.appName,
-      theme: isDark ? Constants.darkTheme : Constants.lightTheme,
+      theme: Constants.lightTheme,
+      darkTheme: Constants.darkTheme,
       home: MainScreen(),
     );
   }
 }
-
