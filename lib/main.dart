@@ -4,9 +4,7 @@ import 'package:furniture_app/screens/main_screen.dart';
 import 'package:furniture_app/util/const.dart';
 
 void main() async{
-  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]).then((_) {
-    runApp(MyApp());
-  });
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
