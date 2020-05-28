@@ -4,7 +4,6 @@ import 'package:furniture_app/screens/details.dart';
 import 'package:furniture_app/util/data.dart';
 import 'package:furniture_app/widgets/badge.dart';
 
-
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
@@ -12,7 +11,6 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   final TextEditingController _searchControl = new TextEditingController();
-
 
   @override
   Widget build(BuildContext context) {
@@ -27,11 +25,9 @@ class _HomeState extends State<Home> {
           SizedBox(width: 20),
         ],
       ),
-
       body: ListView(
         padding: EdgeInsets.only(left: 20),
         children: <Widget>[
-
           Padding(
             padding: EdgeInsets.only(right: 20),
             child: Text(
@@ -42,9 +38,7 @@ class _HomeState extends State<Home> {
               ),
             ),
           ),
-
           SizedBox(height: 10),
-
           Padding(
             padding: EdgeInsets.only(right: 20),
             child: Card(
@@ -65,10 +59,14 @@ class _HomeState extends State<Home> {
                     contentPadding: EdgeInsets.all(10.0),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10.0),
-                      borderSide: BorderSide(color: Colors.white,),
+                      borderSide: BorderSide(
+                        color: Colors.white,
+                      ),
                     ),
                     enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.white,),
+                      borderSide: BorderSide(
+                        color: Colors.white,
+                      ),
                       borderRadius: BorderRadius.circular(10.0),
                     ),
                     hintText: "Search",
@@ -88,8 +86,6 @@ class _HomeState extends State<Home> {
             ),
           ),
           SizedBox(height: 30),
-
-
           Container(
             height: 275,
             child: ListView.builder(
@@ -102,10 +98,10 @@ class _HomeState extends State<Home> {
                 return Padding(
                   padding: EdgeInsets.only(right: 20),
                   child: GestureDetector(
-                    onTap: (){
+                    onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (BuildContext context){
+                          builder: (BuildContext context) {
                             return Details();
                           },
                         ),
@@ -140,10 +136,8 @@ class _HomeState extends State<Home> {
                   ),
                 );
               },
-
             ),
           ),
-
           SizedBox(height: 20),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -155,7 +149,6 @@ class _HomeState extends State<Home> {
                   fontWeight: FontWeight.w800,
                 ),
               ),
-
               FlatButton(
                 child: Text(
                   "View More",
@@ -163,11 +156,10 @@ class _HomeState extends State<Home> {
                     color: Colors.grey,
                   ),
                 ),
-                onPressed: (){},
+                onPressed: () {},
               ),
             ],
           ),
-
           Container(
             height: 140,
             child: ListView.builder(
@@ -180,10 +172,10 @@ class _HomeState extends State<Home> {
                 return Padding(
                   padding: EdgeInsets.only(right: 20),
                   child: GestureDetector(
-                    onTap: (){
+                    onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (BuildContext context){
+                          builder: (BuildContext context) {
                             return Details();
                           },
                         ),
@@ -207,7 +199,6 @@ class _HomeState extends State<Home> {
               },
             ),
           ),
-
           SizedBox(height: 10),
         ],
       ),
