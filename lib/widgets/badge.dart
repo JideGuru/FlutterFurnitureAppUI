@@ -1,18 +1,15 @@
 import 'package:flutter/material.dart';
 
 class IconBadge extends StatefulWidget {
-
   final IconData icon;
 
-  IconBadge({Key key, @required this.icon})
-      : super(key: key);
+  IconBadge({Key key, @required this.icon}) : super(key: key);
 
   @override
   _IconBadgeState createState() => _IconBadgeState();
 }
 
 class _IconBadgeState extends State<IconBadge> {
-
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -34,7 +31,7 @@ class _IconBadgeState extends State<IconBadge> {
             ),
             child: Padding(
               padding: EdgeInsets.only(top: 1),
-              child:Text(
+              child: Text(
                 '2',
                 style: TextStyle(
                   color: Colors.white,

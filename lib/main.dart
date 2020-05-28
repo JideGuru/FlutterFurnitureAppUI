@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:furniture_app/screens/main_screen.dart';
 import 'package:furniture_app/util/const.dart';
 
-void main() async{
+void main() async {
   runApp(MyApp());
 }
 

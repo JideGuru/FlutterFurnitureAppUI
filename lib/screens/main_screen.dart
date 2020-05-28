@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:furniture_app/screens/home.dart';
 import 'package:flutter_icons/flutter_icons.dart';
+import 'package:furniture_app/screens/home.dart';
 
 class MainScreen extends StatefulWidget {
   @override
@@ -13,7 +13,6 @@ class _MainScreenState extends State<MainScreen> {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       body: PageView(
         physics: NeverScrollableScrollPhysics(),
@@ -21,18 +20,15 @@ class _MainScreenState extends State<MainScreen> {
         onPageChanged: onPageChanged,
         children: List.generate(4, (index) => Home()),
       ),
-
       bottomNavigationBar: Theme(
         data: Theme.of(context).copyWith(
           // sets the background color of the `BottomNavigationBar`
           canvasColor: Theme.of(context).primaryColor,
           // sets the active color of the `BottomNavigationBar` if `Brightness` is light
           primaryColor: Theme.of(context).accentColor,
-          textTheme: Theme
-              .of(context)
-              .textTheme
-              .copyWith(caption: TextStyle(color: Colors.grey[500]),
-          ),
+          textTheme: Theme.of(context).textTheme.copyWith(
+                caption: TextStyle(color: Colors.grey[500]),
+              ),
         ),
         child: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
@@ -43,21 +39,18 @@ class _MainScreenState extends State<MainScreen> {
               ),
               title: Container(height: 0.0),
             ),
-
             BottomNavigationBarItem(
               icon: Icon(
                 Feather.heart,
               ),
               title: Container(height: 0.0),
             ),
-
             BottomNavigationBarItem(
               icon: Icon(
                 Feather.user,
               ),
               title: Container(height: 0.0),
             ),
-
             BottomNavigationBarItem(
               icon: Icon(
                 Feather.grid,
@@ -69,7 +62,6 @@ class _MainScreenState extends State<MainScreen> {
           currentIndex: _page,
         ),
       ),
-
     );
   }
 

@@ -3,7 +3,6 @@ import 'package:flutter_icons/flutter_icons.dart';
 import 'package:furniture_app/util/data.dart';
 import 'package:furniture_app/widgets/badge.dart';
 
-
 class Details extends StatefulWidget {
   @override
   _DetailsState createState() => _DetailsState();
@@ -23,15 +22,12 @@ class _DetailsState extends State<Details> {
           SizedBox(width: 20),
         ],
       ),
-
       body: Stack(
         children: <Widget>[
           ListView(
             padding: EdgeInsets.symmetric(horizontal: 20),
             children: <Widget>[
-
               SizedBox(height: 10),
-
               Container(
                 height: 240,
                 width: MediaQuery.of(context).size.width,
@@ -46,12 +42,11 @@ class _DetailsState extends State<Details> {
                         fit: BoxFit.cover,
                       ),
                     ),
-
                     Positioned(
                       right: -10.0,
                       bottom: 3.0,
                       child: RawMaterialButton(
-                        onPressed: (){},
+                        onPressed: () {},
                         fillColor: Colors.white,
                         shape: CircleBorder(),
                         elevation: 4.0,
@@ -69,7 +64,6 @@ class _DetailsState extends State<Details> {
                 ),
               ),
               SizedBox(height: 20),
-
               Text(
                 "${furnitures[0]["name"]}",
                 style: TextStyle(
@@ -85,7 +79,6 @@ class _DetailsState extends State<Details> {
                   fontWeight: FontWeight.w600,
                 ),
               ),
-
               SizedBox(height: 30),
               Text(
                 "Description",
@@ -97,12 +90,12 @@ class _DetailsState extends State<Details> {
               SizedBox(height: 10),
               Text(
                 "Sed porttitor lectus nibh. Cras ultricies ligula "
-                    "sed magna dictum porta. Praesent sapien massa, "
-                    "convallis a pellentesque nec, egestas non nisi. "
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing "
-                    "elit. Nulla porttitor accumsan tincidunt. "
-                    "Curabitur arcu erat, accumsan id imperdiet et, "
-                    "porttitor at sem.",
+                "sed magna dictum porta. Praesent sapien massa, "
+                "convallis a pellentesque nec, egestas non nisi. "
+                "Lorem ipsum dolor sit amet, consectetur adipiscing "
+                "elit. Nulla porttitor accumsan tincidunt. "
+                "Curabitur arcu erat, accumsan id imperdiet et, "
+                "porttitor at sem.",
                 style: TextStyle(
                   fontSize: 15,
                   color: Colors.grey,
@@ -110,7 +103,6 @@ class _DetailsState extends State<Details> {
                 ),
               ),
               SizedBox(height: 20),
-
               Text(
                 "Photos",
                 style: TextStyle(
@@ -119,7 +111,6 @@ class _DetailsState extends State<Details> {
                 ),
               ),
               SizedBox(height: 10),
-
               Container(
                 height: 100,
                 child: ListView.builder(
@@ -132,10 +123,10 @@ class _DetailsState extends State<Details> {
                     return Padding(
                       padding: EdgeInsets.only(right: 20),
                       child: GestureDetector(
-                        onTap: (){
+                        onTap: () {
                           Navigator.of(context).push(
                             MaterialPageRoute(
-                              builder: (BuildContext context){
+                              builder: (BuildContext context) {
                                 return Details();
                               },
                             ),
@@ -159,12 +150,9 @@ class _DetailsState extends State<Details> {
                   },
                 ),
               ),
-
               SizedBox(height: 10),
-
             ],
           ),
-
           Align(
             alignment: Alignment.centerRight,
             child: Padding(
@@ -195,7 +183,6 @@ class _DetailsState extends State<Details> {
           ),
         ],
       ),
-
     );
   }
 }

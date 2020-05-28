@@ -15,6 +15,4 @@ List furnitures = [
     "name": "Dining Room",
     "img": "assets/2.jpeg",
   },
-
-
 ];
