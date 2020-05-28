@@ -39,28 +39,28 @@ class _MainScreenState extends State<MainScreen> {
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Icon(
-                Feather.getIconData("home"),
+                Feather.home,
               ),
               title: Container(height: 0.0),
             ),
 
             BottomNavigationBarItem(
               icon: Icon(
-                Feather.getIconData("heart"),
+                Feather.heart,
               ),
               title: Container(height: 0.0),
             ),
 
             BottomNavigationBarItem(
               icon: Icon(
-                Feather.getIconData("user"),
+                Feather.user,
               ),
               title: Container(height: 0.0),
             ),
 
             BottomNavigationBarItem(
               icon: Icon(
-                Feather.getIconData("grid"),
+                Feather.grid,
               ),
               title: Container(height: 0.0),
             ),
