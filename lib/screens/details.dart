@@ -17,7 +17,7 @@ class _DetailsState extends State<Details> {
         actions: <Widget>[
           Center(
             child: IconBadge(
-              icon: Feather.getIconData("shopping-cart"),
+              icon: Feather.shopping_cart,
             ),
           ),
           SizedBox(width: 20),
@@ -58,7 +58,7 @@ class _DetailsState extends State<Details> {
                         child: Padding(
                           padding: EdgeInsets.all(5),
                           child: Icon(
-                            Feather.getIconData("heart"),
+                            Feather.heart,
                             color: Theme.of(context).accentColor,
                             size: 17,
                           ),
@@ -185,7 +185,7 @@ class _DetailsState extends State<Details> {
                 ),
                 child: Center(
                   child: Icon(
-                    Feather.getIconData("plus"),
+                    Feather.plus,
                     color: Colors.white,
                     size: 25,
                   ),

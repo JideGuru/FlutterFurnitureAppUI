@@ -21,7 +21,7 @@ class _HomeState extends State<Home> {
         actions: <Widget>[
           Center(
             child: IconBadge(
-              icon: Feather.getIconData("shopping-cart"),
+              icon: Feather.shopping_cart,
             ),
           ),
           SizedBox(width: 20),
@@ -73,7 +73,7 @@ class _HomeState extends State<Home> {
                     ),
                     hintText: "Search",
                     prefixIcon: Icon(
-                      Feather.getIconData("search"),
+                      Feather.search,
                       color: Colors.black,
                     ),
                     hintStyle: TextStyle(
